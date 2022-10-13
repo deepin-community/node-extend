@@ -1,0 +1,18 @@
+Description: Use tap instead of tape
+ Because node-tap is in Debian and tape is not.
+Author: Paolo Greppi <paolo.greppi@libpf.com>
+Forwarded: not-needed
+
+Index: node-extend/test/index.js
+===================================================================
+--- node-extend.orig/test/index.js
++++ node-extend/test/index.js
+@@ -1,7 +1,7 @@
+ 'use strict';
+ 
+ var extend = require('../index');
+-var test = require('tape');
++var test = require('tap').test;
+ 
+ var str = 'me a test';
+ var integer = 10;
