@@ -1,5 +1,0 @@
-Tests: require
-Depends: node-extend
-
-Test-Command: tap test
-Depends: @, @builddeps@
